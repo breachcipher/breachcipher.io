@@ -54,6 +54,7 @@
   --card-bg: rgba(22, 22, 22, 0.8);
   --accent-color: var(--cyber-blue);
   --course-title: var(--cyber-blue);
+    --about-text-color: #e0e0e0;
   }
   
   [data-theme="light"] {
@@ -75,6 +76,28 @@
   color: var(--accent-color) !important;
   text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
   }
+
+    /* Tambahkan juga rule khusus untuk about-text di dark mode */
+[data-theme="dark"] .about-text {
+  color: #e0e0e0;
+}
+
+[data-theme="dark"] .about-text p {
+  color: #cccccc;
+}
+
+[data-theme="dark"] .about-text .bio-line {
+  color: #dddddd;
+}
+
+/* Pastikan teks di dalam about-text tetap terbaca */
+[data-theme="dark"] .about-text span {
+  color: var(--cyber-blue); /* Warna biru terang untuk highlight */
+}
+
+[data-theme="dark"] .about-text [style*="opacity"] {
+  opacity: 0.7 !important;
+                  }
   
   /* Efek saat Hover agar lebih hidup */
   .main-navbar a:hover {

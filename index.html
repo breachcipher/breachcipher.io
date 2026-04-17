@@ -842,36 +842,7 @@
   }
   
   /* Efek Glitch untuk Jumbotron */
-  .hero-glitch {
-  animation: jumbotron-shake 0.4s cubic-bezier(.25,.46,.45,.94) both;
-  position: relative;
-  }
   
-  /* Layer tambahan untuk efek warna saat glitch */
-  .hero-glitch::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0, 212, 255, 0.2);
-  mix-blend-mode: overlay;
-  z-index: 3;
-  animation: jumbotron-flash 0.4s steps(2);
-  }
-  
-  @keyframes jumbotron-shake {
-  0% { transform: translate(0); }
-  20% { transform: translate(-5px, 5px); }
-  40% { transform: translate(-5px, -5px); }
-  60% { transform: translate(5px, 5px); }
-  80% { transform: translate(5px, -5px); }
-  100% { transform: translate(0); }
-  }
-  
-  @keyframes jumbotron-flash {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
-  }
   
   /* 1. Atur Garis Awal (Berjarak) */
   .timeline::before {
